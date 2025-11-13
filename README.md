@@ -5,53 +5,42 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-	1. Get the input matrix using np.array()   
-    2. Find the 2-norm of the matrix using np.linalg.norm()
-	3. Print the norm of the matrix in two decimal places.
+1. Import the NumPy as np.
+ 2. Store the user input using np.array() and store it in a variable named mat.
+ 3. Find the 1-Norm of the matrix using np.linalg.norm(mat, 1) and also the 2-Norm of the matrix
+ using np.linalg.norm(mat, 2).
+ 4. Find the Infinity Norm of the matrix using np.linalg.norm(mat, np.inf).
+ 5. Print the 1-Norm, 2-Norm, and Infinity Norm values of the matrix as the final output
 
 	
 ## Program:
+Name : Rahul RP
+Reg num : 212224240125
 ```Python
-
-# 1-Norm of a Matrix
-'''
-Developed by : G Sindhu Priya Reddy
-Registration Number : 212224040319
-'''
+#1
 import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-norm1 = np.linalg.norm(arr,1)
-print("{:.2f}".format(norm1))
-
+mat=np.array(eval(input()))
+ans=np.linalg.norm(mat,1)
+norm_of_matrix="{:.2f}".format(ans)
+print(norm_of_matrix)
 
 
 # 2-Norm of a Matrix
 
 '''
-Program to find 2-norm of a matrix.
-Developed by: G Sindhu Priya Reddy
-RegisterNumber: 212224040319
-'''
 import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-result = np.linalg.norm(arr,2)
-print("{:.2f}".format(result))
+mat=np.array(eval(input()))
+ans=np.linalg.norm(mat,2)
+norm_of_matrix="{:.2f}".format(ans)
+print(norm_of_matrix)
 
-
-
-# Infinity Norm of a Matrix
-
-'''
-Developed by : G Sindhu Priya Reddy
-Register Number : 212224040319
-'''
+#3 Infinity Norm of a Matrix
 import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-result = np.linalg.norm(arr,np.inf)
-print("{:.2f}".format(result))
+mat=np.array(eval(input()))
+ans=np.linalg.norm(mat,np.inf)
+norm_of_matrix="{:.2f}".format(ans)
+print(norm_of_matrix)
+
 
 
 
@@ -59,92 +48,20 @@ print("{:.2f}".format(result))
 ## Output:
 ### 1-Norm of a Matrix
 
-<img width="1215" height="777" alt="Screenshot 2025-09-30 214806" src="https://github.com/user-attachments/assets/25a1099c-3ac5-4742-8ef5-6bd9645ed446" />
+<img width="1719" height="480" alt="image" src="https://github.com/user-attachments/assets/16fcf54a-e4f2-429b-8db0-5f28f8d6eae8" />
+
 
 
 ### 2-Norm of a Matrix
 
-<img width="1158" height="775" alt="Screenshot 2025-09-30 214858" src="https://github.com/user-attachments/assets/630624c7-e9c1-4860-844a-ca96d13e4c5d" />
+<img width="1716" height="534" alt="image" src="https://github.com/user-attachments/assets/76ffb67b-5cbb-44b4-89d0-15fac140ffb8" />
+
 
 
 ### Infinity Norm of a Matrix
 
 
-<img width="1222" height="775" alt="Screenshot 2025-09-30 214923" src="https://github.com/user-attachments/assets/f8251dbc-07d9-40a6-a334-84970669ad28" />
-
-## Result
-Thus the program for 1-norm, 2-norm and Infinity norm of a matrix are written and verified.
-# Norm of a matrix
-## Aim
-To write a program to find the 1-norm, 2-norm and infinity norm of the matrix and display the result in two decimal places.
-## Equipment’s required:
-1.	Hardware – PCs
-2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
-## Algorithm:
-	1. Get the input matrix using np.array()   
-    2. Find the 2-norm of the matrix using np.linalg.norm()
-	3. Print the norm of the matrix in two decimal places.
-
-	
-## Program:
-```Python
-
-# 1-Norm of a Matrix
-'''
-Developed by : G Sindhu Priya Reddy
-Registration Number : 212224040319
-'''
-import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-norm1 = np.linalg.norm(arr,1)
-print("{:.2f}".format(norm1))
-
-
-
-# 2-Norm of a Matrix
-
-'''
-Program to find 2-norm of a matrix.
-Developed by: G Sindhu Priya Reddy
-RegisterNumber: 212224040319
-'''
-import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-result = np.linalg.norm(arr,2)
-print("{:.2f}".format(result))
-
-
-
-# Infinity Norm of a Matrix
-
-'''
-'''
-import numpy as np
-matrix = eval(input())
-arr = np.array(matrix)
-result = np.linalg.norm(arr,np.inf)
-print("{:.2f}".format(result))
-
-
-
-```
-## Output:
-### 1-Norm of a Matrix
-
-<img width="1215" height="777" alt="Screenshot 2025-09-30 214806" src="https://github.com/user-attachments/assets/25a1099c-3ac5-4742-8ef5-6bd9645ed446" />
-
-
-### 2-Norm of a Matrix
-
-<img width="1158" height="775" alt="Screenshot 2025-09-30 214858" src="https://github.com/user-attachments/assets/630624c7-e9c1-4860-844a-ca96d13e4c5d" />
-
-
-### Infinity Norm of a Matrix
-
-
-<img width="1222" height="775" alt="Screenshot 2025-09-30 214923" src="https://github.com/user-attachments/assets/f8251dbc-07d9-40a6-a334-84970669ad28" />
+<img width="1721" height="472" alt="image" src="https://github.com/user-attachments/assets/54a8f877-c83c-480e-88a5-eefeaeb79016" />
 
 ## Result
 Thus the program for 1-norm, 2-norm and Infinity norm of a matrix are written and verified.
